@@ -1,4 +1,5 @@
-import 'package:ecommerce_app/pages/home_page.dart';
+
+import 'package:ecommerce_app/pages/signup_page.dart';
 import 'package:ecommerce_app/provider/cart_provider.dart';
 import 'package:ecommerce_app/provider/fav_provider.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home:const HomePage(),
+        home:const SignupPage()
       ),
     );
   }

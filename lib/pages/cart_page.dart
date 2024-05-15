@@ -7,6 +7,7 @@ class CartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Access the cart provider
     final cartProvider = Provider.of<CartProvider>(context);
 
     return Scaffold(
@@ -15,6 +16,7 @@ class CartPage extends StatelessWidget {
       ),
       body: Column(
         children: [
+          // Display the list of cart items
           Expanded(
             child: ListView.builder(
               itemCount: cartProvider.cart.items.length,

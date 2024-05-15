@@ -9,12 +9,14 @@ class FavouritesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     // Access the favourites provider
     final favouritesProvider = Provider.of<FavouritesProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Favourites'),
       ),
+       // Display the list of fav items
       body: ListView.builder(
         itemCount: favouritesProvider.favourites.items.length,
         itemBuilder: (context, index) {
